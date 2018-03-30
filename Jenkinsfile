@@ -3,8 +3,8 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                call mvn clean; 
-				call mvn package  }
+                call mvn clean package; 
+				call mvn   }
             post {
                 success {
                     echo 'Now Archiving...'
