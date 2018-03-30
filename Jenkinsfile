@@ -4,8 +4,7 @@ pipeline {
         stage('Build'){
             steps {
                 call mvn clean; 
-				call mvn package;
-            }
+				call mvn package  }
             post {
                 success {
                     echo 'Now Archiving...'
